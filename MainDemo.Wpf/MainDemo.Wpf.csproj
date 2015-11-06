@@ -84,6 +84,8 @@
     <Compile Include="Domain\AnotherCommandImplementation.cs" />
     <Compile Include="Domain\DemoItem.cs" />
     <Compile Include="Domain\DialogsViewModel.cs" />
+    <Compile Include="Domain\GridViewItemViewModel.cs" />
+    <Compile Include="Domain\GridViewViewModel.cs" />
     <Compile Include="Domain\ListFieldsViewModel.cs" />
     <Compile Include="Domain\Sample4Dialog.xaml.cs">
       <DependentUpon>Sample4Dialog.xaml</DependentUpon>
@@ -101,6 +103,9 @@
     </Compile>
     <Compile Include="Grids.xaml.cs">
       <DependentUpon>Grids.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GridView.xaml.cs">
+      <DependentUpon>GridView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -166,6 +171,10 @@
     <Page Include="Grids.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GridView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
