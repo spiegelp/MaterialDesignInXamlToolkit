@@ -15,9 +15,12 @@ using System.Windows.Shapes;
 
 namespace MaterialDesignColors.WpfExample
 {
-    public partial class Expander : UserControl
+    /// <summary>
+    /// Interaction logic for Sliders.xaml
+    /// </summary>
+    public partial class Sliders : UserControl
     {
-        public Expander()
+        public Sliders()
         {
             InitializeComponent();
         }

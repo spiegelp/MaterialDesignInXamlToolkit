@@ -130,6 +130,12 @@
     <Compile Include="Shadows.xaml.cs">
       <DependentUpon>Shadows.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Sliders.xaml.cs">
+      <DependentUpon>Sliders.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spinners.xaml.cs">
+      <DependentUpon>Spinners.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TabControl.xaml.cs">
       <DependentUpon>TabControl.xaml</DependentUpon>
     </Compile>
@@ -222,6 +228,14 @@
     <Page Include="Shadows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sliders.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Spinners.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="TabControl.xaml">
       <Generator>MSBuild:Compile</Generator>
