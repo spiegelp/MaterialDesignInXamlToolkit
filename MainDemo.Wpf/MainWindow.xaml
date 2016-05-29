@@ -42,7 +42,7 @@
                     <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                   DockPanel.Dock="Top"
                                   HorizontalAlignment="Right" Margin="16"
-                                  IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />
+                                  IsChecked="{Binding ElementName=MenuToggleButton, Path=IsChecked, Mode=TwoWay}" />                    
                     <ListBox x:Name="DemoItemsListBox" Margin="0 16 0 16" SelectedIndex="0"                         
                              PreviewMouseLeftButtonUp="UIElement_OnPreviewMouseLeftButtonUp">
                         <ListBox.ItemTemplate>
@@ -86,6 +86,16 @@
                         <domain:DemoItem Name="Sliders">
                             <domain:DemoItem.Content>
                                 <wpfExample:Sliders />
+                            </domain:DemoItem.Content>
+                        </domain:DemoItem>
+                        <domain:DemoItem Name="Spinners">
+                            <domain:DemoItem.Content>
+                                <wpfExample:Spinners />
+                            </domain:DemoItem.Content>
+                        </domain:DemoItem>
+                        <domain:DemoItem Name="Chips">
+                            <domain:DemoItem.Content>
+                                <wpfExample:Chips />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Typography">
@@ -139,9 +149,28 @@
                                 </wpfExample:Grids>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
+                        <domain:DemoItem Name="Grid view">
+                            <domain:DemoItem.Content>
+                                <wpfExample:GridView>
+                                    <wpfExample:GridView.DataContext>
+                                        <domain:GridViewViewModel />
+                                    </wpfExample:GridView.DataContext>
+                                </wpfExample:GridView>
+                            </domain:DemoItem.Content>
+                        </domain:DemoItem>
                         <domain:DemoItem Name="Expander">
                             <domain:DemoItem.Content>
                                 <wpfExample:Expander />
+                            </domain:DemoItem.Content>
+                        </domain:DemoItem>
+                        <domain:DemoItem Name="Tab control">
+                            <domain:DemoItem.Content>
+                                <wpfExample:TabControl />
+                            </domain:DemoItem.Content>
+                        </domain:DemoItem>
+                        <domain:DemoItem Name="Group Boxes">
+                            <domain:DemoItem.Content>
+                                <wpfExample:GroupBoxes />
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
                         <domain:DemoItem Name="Menus &amp; Tool Bars">
@@ -163,6 +192,11 @@
                                 </wpfExample:Dialogs>
                             </domain:DemoItem.Content>
                         </domain:DemoItem>
+                        <domain:DemoItem Name="Transitions">
+                            <domain:DemoItem.Content>
+                                <materialDesignDemo:Transitions />
+                            </domain:DemoItem.Content>
+                        </domain:DemoItem>
                         <domain:DemoItem Name="Shadows">
                             <domain:DemoItem.Content>
                                 <wpfExample:Shadows />
@@ -173,21 +207,21 @@
             </materialDesign:DrawerHost.LeftDrawerContent>
             <DockPanel>
                 <materialDesign:ColorZone Padding="16" materialDesign:ShadowAssist.ShadowDepth="Depth2"
-                                          Mode="PrimaryMid" DockPanel.Dock="Top">
+                               Mode="PrimaryMid" DockPanel.Dock="Top">
                     <DockPanel>
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False"
                                       x:Name="MenuToggleButton"/>
-                        <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges">
+                        <materialDesign:PopupBox DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                             <StackPanel>
                                 <Button Content="Hello World" Click="MenuPopupButton_OnClick"/>
                                 <Button Content="Nice Popup" Click="MenuPopupButton_OnClick"/>
-                                <Button Content="Goodbye" Click="MenuPopupButton_OnClick"/>
+                                <Button Content="Goodbye" Click="MenuPopupButton_OnClick"/>                                
                             </StackPanel>
                         </materialDesign:PopupBox>
                         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22">Material Design In XAML Toolkit</TextBlock>
                     </DockPanel>
                 </materialDesign:ColorZone>
-                <ContentControl Margin="16" Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}" />                
+                <ContentControl Margin="16" Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}" />
             </DockPanel>
         </materialDesign:DrawerHost>
     </materialDesign:DialogHost>

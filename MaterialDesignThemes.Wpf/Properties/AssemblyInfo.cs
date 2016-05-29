@@ -11,13 +11,14 @@ using System.Windows.Markup;
 [assembly: AssemblyTitle("MaterialDesignThemes.Wpf")]
 [assembly: AssemblyDescription("Material Design in XAML Toolkit - WPF Themes")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Mulholland Software/James Willock")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("MaterialDesignColors.Wpf")]
-[assembly: AssemblyCopyright("Copyright © 2015")]
+[assembly: AssemblyCopyright("Copyright © 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: XmlnsPrefix("http://materialdesigninxaml.net/winfx/xaml/themes", "materialDesign")]
 [assembly: XmlnsDefinition("http://materialdesigninxaml.net/winfx/xaml/themes", "MaterialDesignThemes.Wpf")]
+[assembly: XmlnsDefinition("http://materialdesigninxaml.net/winfx/xaml/themes", "MaterialDesignThemes.Wpf.Transitions")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 

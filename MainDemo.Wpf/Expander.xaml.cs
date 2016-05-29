@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace MaterialDesignColors.WpfExample
 {
-    /// <summary>
-    /// Interaktionslogik für Expander.xaml
-    /// </summary>
     public partial class Expander : UserControl
     {
         public Expander()
