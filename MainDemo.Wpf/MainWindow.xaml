@@ -215,6 +215,8 @@
                             <StackPanel>
                                 <Button Content="Hello World" Click="MenuPopupButton_OnClick"/>
                                 <Button Content="Nice Popup" Click="MenuPopupButton_OnClick"/>
+                                <Button Content="Can't Touch This" IsEnabled="False" />
+                                <Separator/>
                                 <Button Content="Goodbye" Click="MenuPopupButton_OnClick"/>                                
                             </StackPanel>
                         </materialDesign:PopupBox>
