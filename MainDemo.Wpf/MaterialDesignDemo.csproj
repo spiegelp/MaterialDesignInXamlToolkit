@@ -172,6 +172,9 @@
     <Compile Include="TabControl.xaml.cs">
       <DependentUpon>TabControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Snackbars.xaml.cs">
+      <DependentUpon>Snackbars.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StepperDemo.xaml.cs">
       <DependentUpon>StepperDemo.xaml</DependentUpon>
     </Compile>
@@ -336,6 +339,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="StepperDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Snackbars.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
