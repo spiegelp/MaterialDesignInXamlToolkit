@@ -13,7 +13,7 @@
             <RowDefinition Height="100*" />
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" Text="Change the window width to see the wrapping of the items." Margin="0,8" />
-        <ListBox Grid.Row="1" Style="{StaticResource MaterialDesignGridView}" ItemsSource="{Binding Path= Items}" Margin="150,0">
+        <ListBox Grid.Row="1" Style="{StaticResource MaterialDesignGridView}" ItemsSource="{Binding Path=Items}" Margin="150,0">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Height="60" Width="100">

@@ -62,6 +62,7 @@ namespace MaterialDesignColors.WpfExample.Domain
                         DocumentationLink.DemoPageLink<Sliders>(),
                         DocumentationLink.StyleLink("Sliders")                        
                     }),
+                new DemoItem("Spinners", new Spinners(), null),
                 new DemoItem("Chips", new Chips(), new []
                     {
                         DocumentationLink.DemoPageLink<Chips>(),
@@ -113,12 +114,14 @@ namespace MaterialDesignColors.WpfExample.Domain
                         DocumentationLink.DemoPageLink<ListsAndGridsViewModel>("Demo View Model"),
                         DocumentationLink.StyleLink("DataGrid")
                     }),
+                new DemoItem("Grid view", new GridView() { DataContext = new GridViewViewModel() }, null),
                 new DemoItem("Expander", new Expander(),
                     new []
                     {
                         DocumentationLink.DemoPageLink<Expander>(),
                         DocumentationLink.StyleLink("Expander")
                     }),
+                new DemoItem("Tab control", new TabControl(), null),
                 new DemoItem("Group Boxes", new GroupBoxes(),
                     new []
                     {
