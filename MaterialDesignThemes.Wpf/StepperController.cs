@@ -69,6 +69,46 @@ namespace MaterialDesignThemes.Wpf
         }
 
         /// <summary>
+        /// Gets the next <see cref="IStep"/> for the active <see cref="IStep"/> in a linear order.
+        /// </summary>
+        public IStep NextStep
+        {
+            get
+            {
+                int activeStepIndex = GetActiveStepIndex();
+
+                if (activeStepIndex >= 0 && activeStepIndex < (_stepViewModels.Length - 1))
+                {
+                    return _stepViewModels[activeStepIndex + 1].Step;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the previous <see cref="IStep"/> for the active <see cref="IStep"/> in a linear order.
+        /// </summary>
+        public IStep PreviousStep
+        {
+            get
+            {
+                int activeStepIndex = GetActiveStepIndex();
+
+                if (activeStepIndex > 0 && activeStepIndex < _stepViewModels.Length)
+                {
+                    return _stepViewModels[activeStepIndex - 1].Step;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
         /// Gets all the steps of the <see cref="Stepper"/>.
         /// </summary>
         public IStep[] Steps
@@ -94,7 +134,7 @@ namespace MaterialDesignThemes.Wpf
         /// Initialises the steps which will be shown inside the <see cref="Stepper"/>.
         /// </summary>
         /// <param name="steps"></param>
-        public void InitSteps(IList<IStep> steps)
+        public void InitSteps(IEnumerable<IStep> steps)
         {
             InitSteps(steps?.ToArray());
         }
